@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <style>
+    <link rel="stylesheet" href="/html/styles.css">
+  </style>
+  <title>App Form</title>
+</head>
+<body>
+<h1>Application Form</h1>
+
+<h4>
+  Please, fill out this form with your personal information and tell us about your professional aspiration. 
+</h4>
+
+<form action='/application-success' method='POST'>
+First Name <input type='text' name='firstname'><br>
+Last Name <input type='text' name='lastname'><br>
+Salary Requirement <input type='number' pattern= name='salary'><br>
+
+Desired Position 
+  <select name='desired_position'>
+    <option value='engineer'>Software Engineer</option>
+    <option value='qa_eng'>QA Engineer</option>
+    <option value='prod_manager'>Product Manager</option>
+  </select><br>
+<input type='submit' value='Submit!'>
+
+</form>
+
+</body>
+</html>
